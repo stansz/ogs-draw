@@ -183,63 +183,11 @@ const ShareDialogPicker = (props: ShareDialogProps) => {
 
   const { collabAPI } = props;
 
-  const startCollabJSX = collabAPI ? (
-    <>
-      <div className="ShareDialog__picker__header">
-        {t("labels.liveCollaboration").replace(/\./g, "")}
-      </div>
-
-      <div className="ShareDialog__picker__description">
-        <div style={{ marginBottom: "1em" }}>{t("roomDialog.desc_intro")}</div>
-        {t("roomDialog.desc_privacy")}
-      </div>
-
-      <div className="ShareDialog__picker__button">
-        <FilledButton
-          size="large"
-          label={t("roomDialog.button_startSession")}
-          icon={playerPlayIcon}
-          onClick={() => {
-            trackEvent("share", "room creation", `ui (${getFrame()})`);
-            collabAPI.startCollaboration(null);
-          }}
-        />
-      </div>
-
-      {props.type === "share" && (
-        <div className="ShareDialog__separator">
-          <span>{t("shareDialog.or")}</span>
-        </div>
-      )}
-    </>
-  ) : null;
+  const startCollabJSX = null;
 
   return (
     <>
       {startCollabJSX}
-
-      {props.type === "share" && (
-        <>
-          <div className="ShareDialog__picker__header">
-            {t("exportDialog.link_title")}
-          </div>
-          <div className="ShareDialog__picker__description">
-            {t("exportDialog.link_details")}
-          </div>
-
-          <div className="ShareDialog__picker__button">
-            <FilledButton
-              size="large"
-              label={t("exportDialog.link_button")}
-              icon={LinkIcon}
-              onClick={async () => {
-                await props.onExportToBackend();
-                props.handleClose();
-              }}
-            />
-          </div>
-        </>
-      )}
     </>
   );
 };

@@ -150,7 +150,7 @@ export const COLOR_PALETTE = {
   red: ["#fff5f5", "#ffc9c9", "#ff8787", "#fa5252", "#e03131"],
   pink: ["#fff0f6", "#fcc2d7", "#f783ac", "#e64980", "#c2255c"],
   grape: ["#f8f0fc", "#eebefa", "#da77f2", "#be4bdb", "#9c36b5"],
-  violet: ["#f3f0ff", "#d0bfff", "#9775fa", "#7950f2", "#6741d9"],
+  violet: ["#eff6ff", "#dbeafe", "#93c5fd", "#60a5fa", "#3b82f6"],
   blue: ["#e7f5ff", "#a5d8ff", "#4dabf7", "#228be6", "#1971c2"],
   cyan: ["#e3fafc", "#99e9f2", "#3bc9db", "#15aabf", "#0c8599"],
   teal: ["#e6fcf5", "#96f2d7", "#38d9a9", "#12b886", "#099268"],

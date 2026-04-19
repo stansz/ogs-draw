@@ -1,5 +1,6 @@
 .excalidraw {
-  .ExcalidrawLogo {
+  .OgsDrawLogo,
+  .ExcalidrawLogo { 
     --logo-icon--mobile: 1rem;
     --logo-text--mobile: 0.75rem;
 
@@ -20,6 +21,11 @@
 
     svg {
       flex: 0 0 auto;
+    }
+
+    .OgsDrawLogo-icon {
+      width: auto;
+      color: var(--color-logo-icon);
     }
 
     .ExcalidrawLogo-icon {
