@@ -9,6 +9,7 @@ import {
   useExcalidrawAPI,
 } from "@excalidraw/excalidraw";
 import { share as shareIcon } from "@excalidraw/excalidraw/components/icons";
+import { Button } from "@excalidraw/excalidraw/components/Button";
 import { trackEvent } from "@excalidraw/excalidraw/analytics";
 import { getDefaultAppState } from "@excalidraw/excalidraw/appState";
 import {
@@ -935,15 +936,15 @@ const ExcalidrawWrapper = () => {
           return (
             <div className="excalidraw-ui-top-right">
               {collabError.message && <CollabError collabError={collabError} />}
-              <button
+              <Button
                 className="collab-button"
                 type="button"
-                onClick={openExportDialog}
-                title="Save"
+                onSelect={openExportDialog}
                 style={{ position: "relative", width: "auto" }}
+                title="Save"
               >
-                {shareIcon} Save
-              </button>
+                Save
+              </Button>
             </div>
           );
         }}
