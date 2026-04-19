@@ -8,6 +8,7 @@ import {
   ExcalidrawAPIProvider,
   useExcalidrawAPI,
 } from "@excalidraw/excalidraw";
+import { share as shareIcon } from "@excalidraw/excalidraw/components/icons";
 import { trackEvent } from "@excalidraw/excalidraw/analytics";
 import { getDefaultAppState } from "@excalidraw/excalidraw/appState";
 import {
@@ -939,9 +940,9 @@ const ExcalidrawWrapper = () => {
                 type="button"
                 onClick={openExportDialog}
                 title="Save"
-                style={{ position: "relative" }}
+                style={{ position: "relative", width: "auto" }}
               >
-                Save
+                {shareIcon} Save
               </button>
             </div>
           );
