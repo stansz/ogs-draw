@@ -29,18 +29,6 @@ OGS Draw is a customized build of **Excalidraw**, created and maintained by the 
 
 All credit for the core whiteboard engine, UI framework, and collaboration features goes to the Excalidraw contributors. OGS Draw is an independent customization and is not affiliated with or endorsed by the Excalidraw project.
 
-## Development
-
-```bash
-# Install dependencies
-yarn install
-
-# Build for production
-yarn build:app
-
-# Local dev server
-yarn start
-```
 
 ---
 
